@@ -1,0 +1,22 @@
+name: BukkitRunShell
+version: 1.2.0
+main: wtf.bukkitrunshell.BukkitRunShell
+api-version: 1.16
+authors: [axxecc]
+description: 允许在 Bukkit 服务器上运行 Shell 命令
+folia-supported: true
+
+commands:
+  shell:
+    description: 启动一个交互式 Shell 会话
+    usage: |
+      /shell start - 启动交互式Shell会话
+      /shell exit - 结束Shell会话
+      /shell status - 查看会话状态
+      /shell help - 显示帮助信息
+    permission: bukkitrunshell.use
+
+permissions:
+  interactiveshell.use:
+    description: 允许使用Shell交互
+    default: op
